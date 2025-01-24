@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useAnimation, motion, Variants, Transition } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { IconType } from "react-icons";
-import { Children } from "react";
 
 type AnimatedProps = {
     className?: string;

@@ -4,7 +4,6 @@ import {
     SiReact,
     SiTailwindcss,
     SiTypescript,
-    SiWebgl,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 

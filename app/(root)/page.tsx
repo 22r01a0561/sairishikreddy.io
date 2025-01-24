@@ -11,12 +11,11 @@ import Work from "../sections/Work";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 import Tools from "../sections/Tools";
-import { ScrollArea } from "../components/ui/ScrollArea";
 // import { ScrollArea } from "../components/ui/ScrollArea";
 
 export default function Home() {
-    const [isMobile, setIsMobile] = useState(false);
-    const [isDesktop, setIsDesktop] = useState(false);
+    const [_isMobile, setIsMobile] = useState(false);
+    const [_isDesktop, setIsDesktop] = useState(false);
 
     useEffect(() => {
         try {
@@ -65,19 +64,17 @@ export default function Home() {
 
     return (
         <>
-            {/* <ScrollArea className="h-screen"> */}
-                <Blur />
-                <Color />
-                <NavBar />
-                <main className="flex flex-col items-center justify-center bg-black">
-                    <Hero />
-                    <About />
-                    <Work />
-                    <Tools />
-                    <Contact />
-                    <Footer />
-                </main>
-            {/* </ScrollArea> */}
+            <Blur />
+            <Color />
+            <NavBar />
+            <main className="flex flex-col items-center justify-center bg-black">
+                <Hero />
+                <About />
+                <Work />
+                <Tools />
+                <Contact />
+                <Footer />
+            </main>
         </>
     );
 }
