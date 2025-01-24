@@ -11,7 +11,7 @@ import About from "./sections/About";
 import Work from "./sections/Work";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
-import Tools from "./sections/Tools.tsx";
+import Tools from "./sections/Tools";
 import { ScrollArea } from "./components/ui/ScrollArea";
 
 export default function Home() {

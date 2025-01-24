@@ -32,3 +32,6 @@ yarn-error.log*
 # ide's
 .idea
 .vscode
+
+# node_modules
+node_modules

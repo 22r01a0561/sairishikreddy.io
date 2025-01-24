@@ -11,14 +11,13 @@ const syne = Inter({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.example.com/"),
-    title: "Portfolio template - Eldora UI",
+    title: "Portfolio - 22r01a0561",
     description:
-    "Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
+    "This is my portfolio website. I'm a fresh graduate looking to connect. Would you like to discuss any opportunities or projects we could work on together?",
     generator: "Next.js",
-    applicationName: "Portfolio template",
+    applicationName: "Portfolio",
     keywords: [
-        "Portfolio template",
-        "Eldora UI",
+        "Portfolio",
         "React",
         "developer",
         "frontend",
@@ -41,17 +40,17 @@ export const metadata: Metadata = {
     ],
     colorScheme: "dark",
     openGraph: {
-        title: "Portfolio template - Eldora UI",
+        title: "Portfolio - 22r01a0561",
         description:
-      "Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
-        url: "https://www.eldoraui.site/",
-        siteName: "www.eldoraui.site",
+      "This is my portfolio website. I'm a fresh graduate looking to connect. Would you like to discuss any opportunities or projects we could work on together?",
+        url: "https://www.22r01a0561.site/",
+        siteName: "www.22r01a0561.site",
         images: [
             {
                 url: "./public/metadata.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Portfolio template - Eldora UI",
+                alt: "Portfolio - 22r01a0561",
             },
         ],
         locale: "en-US",
@@ -59,9 +58,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Portfolio template - Eldora UI",
+        title: "Portfolio - 22r01a0561",
         description:
-      "Portfolio template - Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
+      "This is my portfolio website. I'm a fresh graduate looking to connect. Would you like to discuss any opportunities or projects we could work on together?",
         creator: "@karthikmudunuri",
         creatorId: "0000000000",
         images: ["./public/metadata.jpg"],

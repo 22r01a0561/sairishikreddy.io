@@ -1,6 +1,5 @@
 import { inter } from "../fonts/inter";
 import { motion } from "framer-motion";
-// import HeroBackground from "../components/background/HeroBackground";
 import React from "react";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import HackerBackground from "../components/background/hackerbg";
