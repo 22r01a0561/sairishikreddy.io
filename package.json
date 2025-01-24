@@ -23,6 +23,7 @@
     "@react-three/fiber": "^8.16.8",
     "@react-three/rapier": "^1.4.0",
     "@tailwindcss/line-clamp": "^0.4.2",
+    "clsx": "^2.1.1",
     "framer-motion": "^10.6.1",
     "gsap": "^3.11.5",
     "kinet": "^2.2.1",
