@@ -1,24 +1,21 @@
 "use client";
 import React, {useState, useEffect} from "react";
-import { useEffectOnce, useEventListener } from 'usehooks-ts';
-import HandleScroll from "./components/ui/HandleScroll";
-import useBlobity from "./components/blobity/useBlobity";
-import Blur from "./components/overlay/Blur";
-import Color from "./components/overlay/Color";
-import NavBar from "./sections/NavBar";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Work from "./sections/Work";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
-import Tools from "./sections/Tools";
-import { ScrollArea } from "./components/ui/ScrollArea";
+import { useEventListener } from 'usehooks-ts';
+import useBlobity from "../components/blobity/useBlobity";
+import Blur from "../components/overlay/Blur";
+import Color from "../components/overlay/Color";
+import NavBar from "../sections/NavBar";
+import Hero from "../sections/Hero";
+import About from "../sections/About";
+import Work from "../sections/Work";
+import Contact from "../sections/Contact";
+import Footer from "../sections/Footer";
+import Tools from "../sections/Tools";
+import { ScrollArea } from "../components/ui/ScrollArea";
 
 export default function Home() {
-
     const [isMobile, setIsMobile] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
-
     useEffect(() => {
         // Initial scroll to top
         window.scrollTo(0, 0);
@@ -65,19 +62,17 @@ export default function Home() {
     return (
         <>
             <ScrollArea className="h-screen">
-            <Blur />
-            <Color />
-            <NavBar />
-            <main
-                className="flex flex-col items-center justify-center bg-black"
-            >
-                <Hero />
-                <About />
-                <Work />
-                <Tools />
-                <Contact />
-                <Footer />
-            </main>
+                <Blur />
+                <Color />
+                <NavBar />
+                <main className="flex flex-col items-center justify-center bg-black">
+                    <Hero />
+                    <About />
+                    <Work />
+                    <Tools />
+                    <Contact />
+                    <Footer />
+                </main>
             </ScrollArea>
         </>
     );

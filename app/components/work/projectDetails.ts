@@ -1,14 +1,10 @@
 import {
-    SiCplusplus,
     SiFramer,
-    SiGithub, SiNeovim,
     SiNextdotjs,
     SiReact,
-    SiRust,
     SiTailwindcss,
     SiTypescript,
     SiWebgl,
-    SiZig
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
