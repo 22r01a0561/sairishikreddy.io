@@ -12,6 +12,7 @@ import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 import Tools from "../sections/Tools";
 import { ScrollArea } from "../components/ui/ScrollArea";
+// import { ScrollArea } from "../components/ui/ScrollArea";
 
 export default function Home() {
     const [isMobile, setIsMobile] = useState(false);
@@ -64,7 +65,7 @@ export default function Home() {
 
     return (
         <>
-            <ScrollArea className="h-screen">
+            {/* <ScrollArea className="h-screen"> */}
                 <Blur />
                 <Color />
                 <NavBar />
@@ -76,7 +77,7 @@ export default function Home() {
                     <Contact />
                     <Footer />
                 </main>
-            </ScrollArea>
+            {/* </ScrollArea> */}
         </>
     );
 }
