@@ -14,8 +14,10 @@ import Tools from "../sections/Tools";
 // import { ScrollArea } from "../components/ui/ScrollArea";
 
 export default function Home() {
+    /* eslint-disable @typescript-eslint/no-unused-vars */
     const [_isMobile, setIsMobile] = useState(false);
     const [_isDesktop, setIsDesktop] = useState(false);
+    /* eslint-enable @typescript-eslint/no-unused-vars */
 
     useEffect(() => {
         try {

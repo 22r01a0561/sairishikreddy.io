@@ -1,4 +1,6 @@
+/* eslint-disable import/no-named-as-default-member */
 import React, { useEffect } from "react";
+/* eslint-enable import/no-named-as-default-member */
 import { useAnimation, motion, Variants, Transition } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { IconType } from "react-icons";
