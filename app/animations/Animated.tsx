@@ -1,5 +1,5 @@
 /* eslint-disable import/no-named-as-default-member */
-import React, { useEffect } from "react";
+import { Children, useEffect } from "react";
 /* eslint-enable import/no-named-as-default-member */
 import { useAnimation, motion, Variants, Transition } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -60,7 +60,7 @@ const Animated: React.FC<AnimatedProps> = ({
             variants={animatedVariants}
             transition={transition}
         >
-            {React.Children.map(children, (child, index) => {
+            {Children.map(children, (child, index) => {
                 // Cast the child to an IconType to access the IconType properties
                 const icon = child as React.ReactElement<IconType>;
                 return (
