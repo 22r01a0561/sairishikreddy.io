@@ -9,24 +9,24 @@ interface ScrollAreaProps extends React.ComponentPropsWithoutRef<typeof ScrollAr
     children?: React.ReactNode;
 }
 
-    export function ScrollArea({
-        className,
-        children,
-        ...props
-    }: ScrollAreaProps) {
-        return (
-            <ScrollAreaPrimitive.Root
-                className={cn("relative overflow-hidden", className)}
-                {...props}
-            >
-                <ScrollAreaPrimitive.Viewport className="h-full w-full rounded-[inherit]">
-                    {children}
-                </ScrollAreaPrimitive.Viewport>
-                <ScrollBar />
-                <ScrollAreaPrimitive.Corner />
-            </ScrollAreaPrimitive.Root>
-        );
-    }
+export function ScrollArea({
+    className,
+    children,
+    ...props
+}: ScrollAreaProps) {
+    return (
+        <ScrollAreaPrimitive.Root
+            className={cn("relative overflow-hidden", className)}
+            {...props}
+        >
+            <ScrollAreaPrimitive.Viewport className="h-full w-full rounded-[inherit]">
+                {children}
+            </ScrollAreaPrimitive.Viewport>
+            <ScrollBar orientation="vertical" />
+            <ScrollAreaPrimitive.Corner />
+        </ScrollAreaPrimitive.Root>
+    );
+}
 
 const ScrollBar = React.forwardRef<
     React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,
