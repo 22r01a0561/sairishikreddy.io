@@ -11,7 +11,7 @@ import Work from "../sections/Work";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 import Tools from "../sections/Tools";
-// import { ScrollArea } from "../components/ui/ScrollArea";
+import { ScrollArea } from "../components/ui/ScrollArea";
 
 export default function Home() {
     /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -66,17 +66,19 @@ export default function Home() {
 
     return (
         <>
-            <Blur />
-            <Color />
-            <NavBar />
-            <main className="flex flex-col items-center justify-center bg-black">
-                <Hero />
-                <About />
-                <Work />
-                <Tools />
-                <Contact />
-                <Footer />
-            </main>
+            <ScrollArea>
+                <Blur />
+                <Color />
+                <NavBar />
+                <main className="flex flex-col items-center justify-center bg-black">
+                    <Hero />
+                    <About />
+                    <Work />
+                    <Tools />
+                    <Contact />
+                    <Footer />
+                </main>
+            </ScrollArea>
         </>
     );
 }
