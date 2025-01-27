@@ -66,7 +66,7 @@ export default function Home() {
 
     return (
         <>
-            <ScrollArea>
+            <ScrollArea style={{ height: '100vh', overflowY: 'auto' }}>
                 <Blur />
                 <Color />
                 <NavBar />
