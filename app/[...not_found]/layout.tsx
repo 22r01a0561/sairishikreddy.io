@@ -1,7 +1,11 @@
+// import type { Viewport } from 'next'
+
 export const metadata = {
-    title: 'Portfolio - 22r01a0561',
+    title: 'Portfolio - Y. Sai Rishik Reddy',
     description: 'This is my portfolio website. I\'m a fresh graduate looking to connect. Would you like to discuss any opportunities or projects we could work on together?',
+    
 };
+
 
 export default function RootLayout({
     children,
@@ -10,7 +14,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body className="bg-gray-100">{children}</body> {/* Added a background color for better visibility */}
         </html>
     );
 }

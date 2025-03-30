@@ -7,11 +7,14 @@ import Color from "../components/overlay/Color";
 import NavBar from "../sections/NavBar";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
+import Education from "../sections/education";
 import Work from "../sections/Work";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 import Tools from "../sections/Tools";
 import { ScrollArea } from "../components/ui/ScrollArea";
+import Certifications from "../sections/certificates";
+import CodingProfiles from "../sections/CodingProfiles";
 
 export default function Home() {
     /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -73,7 +76,10 @@ export default function Home() {
                 <main className="flex flex-col items-center justify-center bg-black">
                     <Hero />
                     <About />
+                    <Education />
+                    <CodingProfiles/>
                     <Work />
+                    <Certifications/>
                     <Tools />
                     <Contact />
                     <Footer />

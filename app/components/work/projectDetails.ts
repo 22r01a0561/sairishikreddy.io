@@ -1,4 +1,8 @@
 import {
+    SiAndroidstudio,
+    SiDart,
+    SiFirebase,
+    SiFlutter,
     SiFramer,
     SiNextdotjs,
     SiReact,
@@ -23,28 +27,15 @@ export type ProjectProps = {
 export const projects = [
     {
         id: 0,
-        name: "BallotChain",
+        name: "TraceHub",
         description:
-            "A blockchain-based voting system that allows users to vote on candidates and view the results in real-time.",
-        technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
-        techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
-        techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
-        github: "https://github.com/22r01a0561/ballotchain",
-        demo: "https://ballotchain.netlify.app/",
-        image: "/projects/ballotchain.png",
-        available: true,
-    },
-    {
-        id: 1,
-        name: "E-Commerce",
-        description:
-            "Developed an e-commerce website by using React, Typescript, Tailwind CSS, and Framer Motion.",
-        technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
-        techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
-        techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
-        github: "https://github.com/22r01a0561/ecommerce",
-        demo: "https://ecommercedemo.netlify.app/",
-        image: "/projects/ecommerce.png",
+            "Developed a Doctor-Patient Appointment System with secure authentication, enabling patients to book, manage, and track appointments.Utilized HTML, CSS, and JavaScript, for efficient scheduling, notifications, and data management.Enhanced functionality with appointment reminders and admin controls for improved efficiency and security.",
+        technologies: [SiFlutter, SiDart, SiFirebase, SiAndroidstudio],
+        techNames: ["Flutter", "Dart", "Firebase", "Androidstudio"],
+        techLinks: ["https://flutter.dev/", "https://dart.dev/", "https://firebase.google.com/", "https://developer.android.com/"],
+        github: "https://github.com/Shiva7ganesh/TraceHub",
+        demo: "https://play.google.com/store/apps/details?id=com.ultranix.tracehub&pcampaignid=web_share",
+        image: "./projects/tracehub.png",
         available: true,
     },
 ];

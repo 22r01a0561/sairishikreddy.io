@@ -1,6 +1,6 @@
 import ProjectGrid from "../components/work/ProjectGrid";
 import React from "react";
-import HackerBackground from "../components/background/hackerbg";
+// import HackerBackground from "../components/background/hackerbg";
 const Work = () => {
     return (
         <section
@@ -9,7 +9,7 @@ const Work = () => {
             id="work"
         >
             <div className="absolute inset-0 opacity-20">
-                <HackerBackground />
+                {/* <HackerBackground /> */}
             </div>
             <h2 className="mb-10 hidden text-[36px] text-[#e4ded7] md:mb-16 md:text-[42px] lg:mb-16 
             lg:text-[72px]">

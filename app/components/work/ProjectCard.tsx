@@ -1,6 +1,6 @@
 import { ProjectProps } from "./projectDetails";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import AnimatedTitle from "../../animations/AnimatedTitle";
 import AnimatedBody from "../../animations/AnimatedBody";
 import { motion } from "framer-motion";
@@ -28,9 +28,9 @@ const ProjectCard = ({
             whileInView={{ opacity: 1 }}
         >
             <motion.div
-                className={`relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full 
-                    items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] 
-                    md:w-[100%] lg:h-[500px]`}
+                className={`relative bg-cover bg-no-repeat bg-center z-10 h-full w-full 
+            items-stretch justify-center py-0 sm:h-[850px] sm:w-[100%] md:h-[750px] 
+            md:w-[100%] lg:h-[650px] lg:w-[100%]`}
             >
                 <Container
                     width="100%"
@@ -43,20 +43,21 @@ const ProjectCard = ({
                     left="0px"
                     angle={0}
                 >
-                    <Image
-                        src={image}
-                        alt={name}
-                        width={500}
-                        height={500}
-                        className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] 
-                            lg:max-w-[55%] ${id % 2 === 0 ? "right-0" : "left-0"
-        }`}
-                        priority={true}
-                    />
+                    <div className="relative w-full h-full rounded-lg overflow-hidden">
+                        <Image
+                            src={image || '/images/default.png'}
+                            alt={name}
+                            layout="fill"
+                            objectFit="cover"
+                            className="transition-transform duration-300 hover:scale-105"
+                            priority={true}
+                        />
+                    </div>
+
                     <div
-                        className={`absolute top-0 text-[#0E1016] ${id % 2 === 0 ? 
+                        className={`absolute top-0 text-[#0E1016] ${id % 2 === 0 ?
                             "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
-                        } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
+                        } mt-6 flex items-center justify-center gap-4 lg:mt-10`}
                     >
                         {available ? (
                             <>
@@ -77,7 +78,7 @@ const ProjectCard = ({
                                     href={demo}
                                     target="_blank"
                                     aria-label="Open Live Demo"
-                                    className=" w-[43px] rounded-full bg-white p-3 md:p-5 
+                                    className="w-[43px] rounded-full bg-white p-3 md:p-5 
                                     text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
                                     data-blobity
                                     data-blobity-radius="35"
@@ -91,6 +92,7 @@ const ProjectCard = ({
                             <div></div>
                         )}
                     </div>
+
                     <div
                         className={`absolute text-white ${!(id % 2 === 0)
                             ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60 lg:mr-4"
@@ -108,12 +110,12 @@ const ProjectCard = ({
                         <AnimatedBody
                             text={description}
                             className={
-                                "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
+                                "mt-4 w-[90%] max-w-[457px] text-[16px] font-bold text-white "
                             }
                         />
                         <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">
                             {technologies.map((IconComponent, id) => (
-                                <div key={id} className={"relative"}>
+                                <div key={id} className="relative">
                                     <Link
                                         href={techLinks[id]}
                                         target="_blank"

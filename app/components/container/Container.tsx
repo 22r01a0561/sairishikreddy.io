@@ -55,8 +55,8 @@ type ContainerProps = {
 };
 
 const Container: React.FC<ContainerProps> = ({
-    width,
-    height,
+    width = "100%",
+    height = "100%",
     top = 0,
     left = 0,
     color,

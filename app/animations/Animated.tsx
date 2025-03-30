@@ -59,6 +59,7 @@ const Animated: React.FC<AnimatedProps> = ({
             animate={controls}
             variants={animatedVariants}
             transition={transition}
+            style={{ width: "100%", height: "auto" }}
         >
             {Children.map(children, (child, index) => {
                 // Cast the child to an IconType to access the IconType properties
