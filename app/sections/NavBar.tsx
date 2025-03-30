@@ -2,7 +2,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { FaHome, FaUser, FaGraduationCap, FaBriefcase, FaCertificate, FaTools, FaEnvelope } from "react-icons/fa";
+import { PiCertificateFill } from "react-icons/pi";
+import { MdWork, MdHomeFilled } from "react-icons/md";
+import { RiContactsFill } from "react-icons/ri";
+import { FaUserGraduate } from "react-icons/fa6";
+import { RiUser6Fill } from "react-icons/ri";
+import { FaTools} from "react-icons/fa";
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,13 +28,13 @@ const NavBar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const navLinks = [
-        { label: "Home", href: "#home", icon: <FaHome /> },
-        { label: "About", href: "#about", icon: <FaUser /> },
-        { label: "Education", href: "#education", icon: <FaGraduationCap /> },
-        { label: "Work", href: "#work", icon: <FaBriefcase /> },
-        { label: "Certificates", href: "#certifications", icon: <FaCertificate /> },
+        { label: "Home", href: "#home", icon: <MdHomeFilled /> },
+        { label: "About", href: "#about", icon: <RiUser6Fill /> },
+        { label: "Education", href: "#education", icon: <FaUserGraduate /> },
+        { label: "Work", href: "#work", icon: <MdWork /> },
+        { label: "Certificates", href: "#certifications", icon: <PiCertificateFill /> },
         { label: "Tools", href: "#tools", icon: <FaTools /> },
-        { label: "Contact", href: "#contact", icon: <FaEnvelope /> },
+        { label: "Contact", href: "#contact", icon: <RiContactsFill /> },
     ];
 
     return (

@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="./your/favicon.ico" />
+                <link rel="icon" href="/favicon.ico" />
             </head>
             <body className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}>
                 {children}
