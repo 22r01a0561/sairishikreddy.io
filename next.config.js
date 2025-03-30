@@ -15,15 +15,6 @@ const nextConfig = {
             pure: true,
         },
     },
-    async redirects() {
-        return [
-            {
-                source: '/#CodingProfiles',
-                destination: '/CodingProfiles',
-                permanent: true,
-            },
-        ];
-    },
     devIndicators: {
         position: "top-right",
     },

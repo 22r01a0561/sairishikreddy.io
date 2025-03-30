@@ -3,11 +3,6 @@ import {
     SiDart,
     SiFirebase,
     SiFlutter,
-    SiFramer,
-    SiNextdotjs,
-    SiReact,
-    SiTailwindcss,
-    SiTypescript,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 

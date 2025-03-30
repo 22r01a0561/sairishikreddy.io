@@ -3,7 +3,7 @@ import Link from "next/link";
 import Container from "../components/container/Container";
 import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5"; // Menu Icons
-import { FaHome, FaUser, FaGraduationCap, FaBriefcase, FaCertificate, FaTools, FaEnvelope, FaCode } from "react-icons/fa"; // Section Icons
+import { FaHome, FaUser, FaGraduationCap, FaBriefcase, FaCertificate, FaTools, FaEnvelope } from "react-icons/fa"; // Section Icons
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
