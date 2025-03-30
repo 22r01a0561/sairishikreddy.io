@@ -46,8 +46,8 @@ const Hero = () => {
                     >
                         My Resume
                     </a>
-
-                    {/* Coding Platform Links */}
+                    
+                    {/* Coding Platform Links
                     <div className="mt-6 flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5">
                         <a
                             href="https://www.codechef.com/users/r22r01a0561"
@@ -93,7 +93,7 @@ const Hero = () => {
                         >
                             <SiLeetcode /> <span>LeetCode</span>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </motion.section>
