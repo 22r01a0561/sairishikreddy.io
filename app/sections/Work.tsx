@@ -11,7 +11,7 @@ const Work = () => {
             <div className="absolute inset-0 opacity-20">
                 {/* <HackerBackground /> */}
             </div>
-            <h2 className="mb-10 hidden text-[36px] text-[#e4ded7] md:mb-16 md:text-[42px] lg:mb-16 
+            <h2 className="mb-10 text-[36px] text-[#e4ded7] md:mb-16 md:text-[42px] lg:mb-16 
             lg:text-[72px]">
                 Featured Work
             </h2>

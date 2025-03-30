@@ -48,6 +48,7 @@
     "dotenv": "^16.4.7",
     "export": "^0.1.337",
     "express": "^4.21.2",
+    "fast-average-color": "^9.5.0",
     "framer-motion": "^10.6.1",
     "gsap": "^3.11.5",
     "kinet": "^2.2.1",
