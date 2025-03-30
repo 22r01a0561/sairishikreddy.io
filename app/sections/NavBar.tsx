@@ -33,7 +33,7 @@ const NavBar = () => {
         { label: "HOME", href: "#home", icon: <FaHome /> },
         { label: "ABOUT", href: "#about", icon: <FaUser /> },
         { label: "EDUCATION", href: "#education", icon: <FaGraduationCap /> },
-        { label: "CODINGPROFILES", href: "#codingprofiles", icon: <FaCode /> },
+        // { label: "CODINGPROFILES", href: "#codingprofiles", icon: <FaCode /> },
         { label: "WORK", href: "#work", icon: <FaBriefcase /> },
         { label: "CERTIFICATES", href: "#certifications", icon: <FaCertificate /> },
         { label: "TOOLS", href: "#tools", icon: <FaTools /> },
