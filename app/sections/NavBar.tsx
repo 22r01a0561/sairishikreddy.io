@@ -11,7 +11,7 @@ const NavBar = () => {
         e.preventDefault();
         const href = e.currentTarget.getAttribute("href");
         if (!href) return;
-        const targetId = href.substring(1);
+        const targetId = href.slice(1);
         const element = document.getElementById(targetId);
 
         if (element) {
@@ -27,7 +27,7 @@ const NavBar = () => {
         { label: "About", href: "#about", icon: <FaUser /> },
         { label: "Education", href: "#education", icon: <FaGraduationCap /> },
         { label: "Work", href: "#work", icon: <FaBriefcase /> },
-        { label: "Certificates", href: "#certificates", icon: <FaCertificate /> },
+        { label: "Certificates", href: "#certifications", icon: <FaCertificate /> },
         { label: "Tools", href: "#tools", icon: <FaTools /> },
         { label: "Contact", href: "#contact", icon: <FaEnvelope /> },
     ];

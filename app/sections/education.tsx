@@ -1,6 +1,6 @@
 import React from "react";
 import "../animations/animate.css";
-import AnimatedBody from "../animations/AnimatedBody";
+// import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import HackerBackground from "../components/background/hackerbg";
 import EducationCard from "../components/ui/EducationCard";
