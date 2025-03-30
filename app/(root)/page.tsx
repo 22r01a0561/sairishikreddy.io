@@ -14,7 +14,7 @@ import Footer from "../sections/Footer";
 import Tools from "../sections/Tools";
 import { ScrollArea } from "../components/ui/ScrollArea";
 import Certifications from "../sections/certificates";
-import CodingProfiles from "../sections/CodingProfiles";
+// import CodingProfiles from "../sections/CodingProfiles";
 
 export default function Home() {
     /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -77,7 +77,7 @@ export default function Home() {
                     <Hero />
                     <About />
                     <Education />
-                    <CodingProfiles/>
+                    {/* <CodingProfiles/> */}
                     <Work />
                     <Certifications/>
                     <Tools />
